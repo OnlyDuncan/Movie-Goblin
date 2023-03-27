@@ -4,7 +4,15 @@ import Login from '../pages/auth/login';
 export default function Home() {
   return (
     <div>
-      <Login />
+      <Head>
+        <title>Movie Goblin</title>
+        <meta name="A movie database and sharing site." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <div>
+        <Login />
+      </div>
     </div>
-  )
+  );
 }
