@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Light_Toggle from "../icons/light_toggle";
+import Dark_Toggle from "../icons/dark_toggle";
 
 function theme_toggle() {
         
@@ -23,7 +25,15 @@ function theme_toggle() {
 
     return (
         <div className={`App ${theme}`}>
-            <button onClick={toggleTheme}>Toggle Theme</button>
+            <button className="toggleButton" onClick={toggleTheme}>
+                {(() => {
+                    if (theme === "light") {
+                        return <Light_Toggle />
+                    } else {
+                        return <Dark_Toggle />
+                    }
+                })()}
+            </button>
         </div>
     );
 }

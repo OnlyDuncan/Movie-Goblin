@@ -1,4 +1,34 @@
-/* Global CSS */
+/* App */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.contentCard {
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
 
 /* Index/Login CSS */
 
@@ -9,3 +39,108 @@
 /* Favorites Page CSS */
 
 /* Post Page CSS */
+
+/* Header */
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Toggle Button */
+
+.toggleButton {
+    border: none;
+    background: none;
+    height: 30px;
+    width: 60px;
+    padding: 0;
+    padding-left: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+
+}
+
+/* Nav */
+
+ .bm-burger-button {
+    position: relative;
+    right: 10px;
+    padding: 0;
+    margin: 0;
+    width: 26px;
+    height: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bm-burger-bars {
+    background: #373a47;
+}
+
+.bm-burger-bars-hover {
+    background: #a90000;
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+.bm-cross {
+    background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+    position: absolute;
+    height: 2px;
+    overflow: hidden;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    height: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+    height: 200px;
+}
+
+.bm-item {
+    display: inline-block;
+    color: #d1d1d1;
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.bm-item:hover {
+    color: #ffffff;
+}
+
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}

@@ -23,15 +23,16 @@ export default function Login() {
 
     useEffect(() => {
         if (user) {
-            route.push("/");
+            route.push("/homepage");
         } else {
             console.log("login");
         }
     }, [user]);
 
     return (
-        <div>
-            <button onClick = {GoogleLogin} className = "text-white bg-gray-700 w-full font-medium rounded-lg flex align-middle p-4 gap-2">
+        <div style={{ justifyContent: "center", alignItems: "center", margin: "auto", display: "flex", flexDirection: "column" }}>
+            <p style={{ textAlign:"center" }}>You're one step away from being able to search, share, and discuss your favorite films!</p>
+            <button onClick = {GoogleLogin}>
                 <FcGoogle className = "text-2xl" />
                 Sign in with Google
             </button>
