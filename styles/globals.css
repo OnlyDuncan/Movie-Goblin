@@ -1,5 +1,13 @@
 /* App */
 
+.App {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -28,6 +36,27 @@ ul {
     justify-content: center;
     align-items: center;
     position: absolute;
+}
+
+.movies {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    align-items: center;
+    width: 800px;
+}
+
+.movie { 
+    padding: 5px 25px 10px 25px;
+    max-width: 25%;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 /* Index/Login CSS */
@@ -101,18 +130,16 @@ ul {
 }
 
 .bm-menu-wrap {
-    position: absolute;
-    height: 2px;
+    position: relative;
     overflow: hidden;
     margin-top: -30px;
-    margin-bottom: 30px;
+    padding-bottom: px;
 }
 
 .bm-menu {
     background: #373a47;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
-    height: 2px;
     position: relative;
     overflow: hidden;
 }
